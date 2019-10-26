@@ -1,5 +1,16 @@
-def firstname = "Pila"
+import groovy.transform.CompileStatic
 
-def fullname = "Louis ${firstname}" //? string interpolation
+// def firstname = "Pila"
 
-println fullname
+// def fullname = "Louis ${firstname}" //? string interpolation
+
+// println fullname
+
+
+@CompileStatic
+int doubleIt(int num){
+    num * 2
+}
+
+assert doubleIt(2) == 4
+
